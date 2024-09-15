@@ -1,0 +1,686 @@
+/* تنسيق الحاوية الرئيسية لواجهة تسجيل الدخول */
+*{
+  direction:rtl;
+}
+
+.login-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* تنسيق عنوان تسجيل الدخول */
+  .login-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* تنسيق الرسائل الخطأ */
+  .error-message {
+    color: #ff4d4d;
+    margin-bottom: 15px;
+  }
+  
+  /* تنسيق نموذج تسجيل الدخول */
+  .login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  
+  }
+  
+  /* تنسيق الحقول */
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline:none;
+  }
+  
+  /* تنسيق زر تسجيل الدخول */
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+/* تنسيق الجداول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  /* تحسين الأزرار */
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* تنسيق أزرار الكمية */
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-controls button {
+    padding: 5px;
+    background-color: #28a745;
+  }
+  
+  .quantity-controls span {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  /* تنسيق سلة المشتريات */
+  .cart {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .cart h2 {
+    margin-bottom: 10px;
+  }
+  
+  .cart p {
+    color: #666;
+  }
+  
+  .cart-summary {
+    margin-top: 20px;
+  }
+  
+  .cart-summary p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  /* تنسيق مربع البحث */
+.search-box {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* تنسيق الجداول */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  /* تحسين الأزرار */
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* تنسيق أزرار الكمية */
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-controls button {
+    padding: 5px;
+    background-color: #28a745;
+  }
+  
+  .quantity-controls span {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  /* تنسيق سلة المشتريات */
+  .cart {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .cart h2 {
+    margin-bottom: 10px;
+  }
+  
+  .cart p {
+    color: #666;
+  }
+  
+  .cart-summary {
+    margin-top: 20px;
+  }
+  
+  .cart-summary p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+  /* تنسيق صفحة المدير */
+.admin-dashboard {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .admin-section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* تنسيق نموذج إضافة الدواء */
+  .drug-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .drug-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .drug-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .drug-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* تنسيق مربع البحث */
+  .search-box {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* تنسيق الجداول */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  /* تحسين الأزرار */
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* تنسيق البوب أب */
+/* تنسيق البوب أب */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .popup-content h2 {
+    margin-top: 0;
+  }
+  
+  .popup-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup-content input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .popup-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .popup-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .popup-buttons button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .popup-buttons button[type="button"] {
+    background-color: #ccc;
+  }
+  
+  .popup-buttons button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .popup-buttons button[type="button"]:hover {
+    background-color: #aaa;
+  }
+  .user-table {
+    padding: 20px;
+  }
+  
+  .search-box {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-controls button {
+    padding: 5px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .quantity-controls button:hover {
+    background-color: #45a049;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .admin-dashboard {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .admin-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-form, .drug-form {
+    margin-bottom: 20px;
+  }
+  
+  .user-table, .drug-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th, .drug-table th, .user-table td, .drug-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .user-table th, .drug-table th {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+  
+  .search-box {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* نمط للبوب أب */
+.edit-user-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* تنسيق القائمة المنسدلة */
+.dropdown-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.dropdown-select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.company-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* تنسيق الحاوية الخاصة بالبوب أب */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* تنسيق العناوين */
+.popup-content h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* تنسيق الحقول المدخلة */
+.popup-content input,
+.popup-content select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* تنسيق القائمة المنسدلة */
+.dropdown-company {
+  appearance: none; /* إزالة مظهر السهم الافتراضي */
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: #333;
+  cursor: pointer;
+}
+
+/* تنسيق الأزرار */
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-buttons button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.popup-buttons button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.popup-buttons button[type="button"] {
+  background-color: #f44336;
+  color: white;
+}
+
+.popup-buttons button[type="button"]:hover {
+  background-color: #d32f2f;
+}
+
+.user-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+  
